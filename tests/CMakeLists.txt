@@ -1,0 +1,6 @@
+set(target finitesets-tests)
+file(GLOB sources CONFIGURE_DEPENDS *.cxx *.cpp *.cc)
+add_executable(${target} "${sources}")
+add_dependencies(${target} gtest)
+target_link_libraries(${target} gtest)
+target_include_directories(${target} PRIVATE "${PROJECT_SOURCE_DIR}/include" "${PROJECT_SOURCE_DIR}/gtest")

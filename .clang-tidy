@@ -1,0 +1,34 @@
+---
+UseColor: true
+Checks:
+  bugprone-*, cert-*, clang-analyzer-*, clang-diagnostic-*, concurrency-*, cppcoreguidelines-*,
+  hicpp-*, misc-*, modernize-*, mpi-*, performance-*, portability-*, readability-*,
+
+  -misc-const-correctness,
+  -modernize-use-trailing-return-type,
+  -misc-include-cleaner,
+  -readability-identifier-length,
+  -readability-isolate-declaration,
+  -misc-use-anonymous-namespace,
+  -hicpp-braces-around-statements, -readability-braces-around-statements,
+  -bugprone-narrowing-conversions, -cppcoreguidelines-narrowing-conversions,
+  -cppcoreguidelines-avoid-c-arrays, -hicpp-avoid-c-arrays, -modernize-avoid-c-arrays,
+  -cppcoreguidelines-avoid-magic-numbers, -readability-magic-numbers,
+  -cppcoreguidelines-pro-bounds-array-to-pointer-decay, -hicpp-no-array-decay,
+  -cppcoreguidelines-pro-bounds-pointer-arithmetic,
+  -hicpp-named-parameter, -readability-named-parameter,
+  -performance-avoid-endl,
+  -cppcoreguidelines-avoid-non-const-global-variables,
+  -cppcoreguidelines-macro-usage,
+  -bugprone-suspicious-semicolon,
+  -bugprone-empty-catch,
+  -cppcoreguidelines-init-variables,
+  -hicpp-explicit-conversions,
+  -cppcoreguidelines-avoid-const-or-ref-data-members,
+  -cppcoreguidelines-pro-type-reinterpret-cast,
+  -hicpp-signed-bitwise,
+  -misc-non-private-member-variables-in-classes,
+  -cppcoreguidelines-avoid-do-while,
+  -readability-avoid-return-with-void-value
+SystemHeaders: false
+...
